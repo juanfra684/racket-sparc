@@ -1130,6 +1130,9 @@ extern mp_size_t mpn_fft_table[2][MPN_FFT_TABLE_SIZE];
 
 #endif /* TUNE_PROGRAM_BUILD */
 
+#define LIKELY(cond)                   __GMP_LIKELY(cond)
+#define UNLIKELY(cond)                 __GMP_UNLIKELY(cond)
+
 #if defined (__cplusplus)
 }
 #endif
